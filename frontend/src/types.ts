@@ -1,6 +1,10 @@
 export const Nothing = Symbol("nothing");
 type Nothing = typeof Nothing;
 
+export type Children = {
+  children: React.ReactNode;
+};
+
 export type Maybe<T> = T | Nothing;
 
 export type Card = {

@@ -1,7 +1,7 @@
-import React, { useContext } from "react";
+import React from "react";
 import styled from "styled-components";
+import { useToggleThemeContext } from "../../context";
 import { logo } from "../../styles/AppStyles";
-import { ToggleThemeContext } from "../../appContext";
 
 const Wrapper = styled.header`
   display: flex;
@@ -27,7 +27,7 @@ const Logo = styled.div`
 `;
 
 export default function Header() {
-  const { isDarkMode, toggle } = useContext(ToggleThemeContext);
+  const { isDarkMode, toggle } = useToggleThemeContext();
 
   return (
     <Wrapper>

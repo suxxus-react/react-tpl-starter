@@ -1,17 +1,16 @@
 import * as React from "react";
 import type { Preview } from "@storybook/react";
 import { GlobalStyles } from ".././src/styles/globalStyles";
-import { ThemeProvider } from "styled-components";
 import { withRouter } from "storybook-addon-react-router-v6";
+import { ToggleThemeContextProvider } from "../src/context";
 
+/* eslint-disable-next-line */
 const DefaultDecorator = (Story: any) => {
-  const isDark = false;
-
   return (
-    <ThemeProvider theme={{ isDark }}>
+    <ToggleThemeContextProvider>
       <GlobalStyles />
       <Story />
-    </ThemeProvider>
+    </ToggleThemeContextProvider>
   );
 };
 
