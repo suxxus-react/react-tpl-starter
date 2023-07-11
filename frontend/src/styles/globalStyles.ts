@@ -48,8 +48,6 @@ const global = css`
 
   body {
     color: var(--color-default);
-    background: linear-gradient(to bottom, var(--primary-bg), var(--end-bg));
-    min-height: 100vh;
   }
 
   a {
