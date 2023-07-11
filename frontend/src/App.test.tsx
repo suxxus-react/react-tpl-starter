@@ -1,10 +1,10 @@
 import React from "react";
-import { render, screen } from "../testUtils";
-import MainView from "./";
+import { render, screen } from "./ui/testUtils";
+import App from "./App";
 
-describe("<MainView> ", () => {
+describe("<App /> ", () => {
   test("Show the initial view route '/'", () => {
-    render(<MainView />, {
+    render(<App />, {
       route: "/",
     });
 

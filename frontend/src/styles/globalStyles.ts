@@ -18,14 +18,13 @@ const commonVariables = `
   --end-bg: white;
   --masked-img-bg: antiquewhite;
   --user-preview-bg: #f2f1f1;
-  --header-bg: #f2f1f1;
+  --header-bg: #0A0A08;
   --header-color: white;
 `;
 
 const lightTheme = `
     ${commonVariables}
     --primary-bg: #F5E2C1;
-    --header-bg: #42031c;
     --end-bg: pink;
   `;
 
@@ -34,7 +33,6 @@ const darkTheme = `
     --primary-bg: #17191a;
     --color-default: #b5aea5;
     --user-preview-bg: #2b2d2f;
-    --header-bg: #646358;
 `;
 
 const global = css`

@@ -1,5 +1,6 @@
 import React from "react";
-import { render, screen } from "../components/testUtils";
+import { render, screen } from "../ui/testUtils";
+
 import userEvent from "@testing-library/user-event";
 
 import { useToggleThemeContext } from "./";
@@ -21,7 +22,7 @@ function Page(): JSX.Element {
   );
 }
 
-describe("<CardsContextProvider />", () => {
+describe("<ToggleThemeContextProvider />", () => {
   test("Should switch theme dark mode", async () => {
     render(<Page />, {});
 
